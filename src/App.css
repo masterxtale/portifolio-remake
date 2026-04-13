@@ -1,0 +1,81 @@
+body{
+  background-image: url('12488.jpg');
+  background-size: cover;
+  
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  background: rgba(255, 255, 255, 0.2); /* transparência */
+  backdrop-filter: blur(10px);         /* efeito vidro */
+  -webkit-backdrop-filter: blur(10px); /* suporte Safari */
+  padding: 0px;
+  
+  height: 100%;
+  width: 90dvw;
+
+}
+
+#gridMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+#nomeMenu{
+  width: 40%;
+  gap: 3%;
+  padding-left: 5% ;
+  font-size: 2dvw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(55, 11, 84, 0.879);
+}
+
+.menu {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  gap: 1%;
+
+}
+
+.botaoDownload{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1dvw;
+  width: 8dvw;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 1.13dvw;
+  padding: 1dvw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(118, 9, 9, 0.738);
+  border-radius: 1dvw;
+  margin: 1%;
+  text-decoration: none;
+}
+.botaoMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8dvw;
+  border-radius: 15px;
+  color: rgba(0, 0, 0);
+  font-size: 1.13dvw;
+  padding: 0.4dvw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+.botaoFundo{
+
+  border-radius: 20px;
+}
