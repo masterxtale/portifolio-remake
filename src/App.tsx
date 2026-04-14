@@ -30,7 +30,7 @@ function App() {
       <section id="home" className="secao">
         <div className="hero-content">
           <h1 className="titulo">Olá, eu sou <span className="highlight">HENRIQUE POSSEBON</span></h1>
-          <h2 className="subtitulohome">Estudante de Engenharia da Computação • Desenvolvedor Front-End</h2>
+          <h2 className="subtitulohome" id="subtitulohome1">Estudante de Engenharia da Computação • Desenvolvedor Front-End</h2>
           <p className="paragrafohome">
             Transformo ideias em interfaces modernas, responsivas e funcionais 
             utilizando React, JavaScript, HTML e CSS.
