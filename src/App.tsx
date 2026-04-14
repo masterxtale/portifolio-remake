@@ -1,4 +1,5 @@
 import './App.css';
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -17,19 +18,15 @@ function App() {
           <a href="#contato" className="botaoMenu">Contato</a>
         </div>
 
-        <a 
-          href="/curriculo/Henrique_Possebon_Barbosa.pdf" 
-          target="_blank" 
-          className="botaoDownload"
-        >
-          Baixar CV
+        <a href="/curriculo/Henrique_Possebon_Barbosa.pdf" target="_blank" className="botaoDownload">
+        Baixar CV
         </a>
       </nav>
 
       {/* HERO SECTION */}
       <section id="home" className="secao">
         <div className="hero-content">
-          <h1 className="titulo">Olá, eu sou <span className="highlight">HENRIQUE POSSEBON</span></h1>
+          <h1 className="titulo" id="titulohome">Olá, eu sou <span className="highlight">HENRIQUE POSSEBON</span></h1>
           <h2 className="subtitulohome" id="subtitulohome1">Estudante de Engenharia da Computação • Desenvolvedor Front-End</h2>
           <p className="paragrafohome">
             Transformo ideias em interfaces modernas, responsivas e funcionais 
@@ -63,28 +60,58 @@ function App() {
 
       {/* FORMAÇÃO */}
       <section id="formacao" className="secao">
-        <h2>Formação</h2>
+        <h2 className="subtitulo" id="tituloFormacao" style={{fontSize:"4rem"}}>🎓 Formação</h2>
         <div className="section-content">
-          <div className="formacao-card">
-            <h3>Bacharelado em Engenharia da Computação</h3>
-            <p>Anhanguera Educacional – Guarulhos/SP</p>
-            <p>9º semestre • Conclusão prevista: Dezembro de 2026</p>
+          <div className="card1">
+            <div className="content">
+              <p className="heading">Bacharelado em Engenharia da Computação
+              </p><p className="para">
+                Anhanguera Educacional – Guarulhos/SP</p>
+                
+                <p className="para">
+                  9º semestre • Conclusão prevista: Dezembro de 2026
+                </p>
+              <button className="btn"><a id="btna" href="https://pt.wikipedia.org/wiki/Engenheiro_de_computa%C3%A7%C3%A3o">Saiba mais</a></button>
+            </div>
           </div>
+
+
         </div>
       </section>
 
       {/* PROJETOS - Você vai preencher depois */}
       <section id="projetos" className="secao">
-        <h2>Projetos em Destaque</h2>
-        <p className="section-description">
-          Aqui ficarão meus principais projetos. Por enquanto estou atualizando esta seção.
-        </p>
+        <div id="projetodestaquecard">
+          <div style={{background:"linear-gradient(180deg, #e100ff 0%, #8800ff 50%", width:"100%", display:"flex", justifyContent:"center", boxShadow:"0 10px 30px rgba(0, 0, 0, 0.6)", borderTop:"4px solid #56008f"}}><h2 style={{margin:"1rem", color:"black"}}>PROJETO EM DESTAQUE</h2></div>
+          <div id="destaque1" style={{gap:"1rem", padding:"1rem", justifyContent:"center", alignItems:"center"}}>
+              <div style={{ backgroundImage: "url('projetoQuiz.png')",
+                width: "60dvw",
+                maxWidth: "40rem",
+                maxHeight:"20rem",
+                height: "20dvw",
+                backgroundSize:"cover",
+                backgroundRepeat:"no-repeat",
+                borderRadius:"20px"}}></div>
+            
+            <div style={{width:"80%", display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+              <h3>SmartQuiz</h3>
+              <p style={{fontFamily:"Arial"}}>Aplicação de quiz inteligente com arquitetura full stack, composta por frontend e backend,
+                 que utiliza uma API de IA para gerar perguntas dinâmicas em tempo real. O projeto está hospedado
+                  na nuvem, com o frontend no GitHub Pages e o backend em ambiente cloud (Render).</p>
+              <a>ads</a>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        
+        <Card/>
+        
         {/* Cards de projetos serão adicionados aqui */}
       </section>
 
       {/* HABILIDADES */}
-<section id="habilidades" className="secao">
-  <h2>Habilidades Técnicas</h2>
+<section id="habilidades" className="secao" style={{background:"linear-gradient(to bottom, #72727275, #ec489a00)", padding:"2rem", borderRadius:"20px"}}>
+  <h2 style={{fontSize:"3rem"}}>Habilidades Técnicas</h2>
   
   <div className="skills-grid">
     <>
@@ -95,7 +122,7 @@ function App() {
             <p>• HTML5</p>
             <p>• CSS3</p> 
             <p>• JavaScript (ES6+)</p>
-            <p>• React • Responsividade</p> 
+            <p>• React</p> 
         </div>
       </div>
 
@@ -132,6 +159,7 @@ function App() {
           <li>Introdução à Ciência da Computação com Python – Coursera / USP</li>
           <li>Excel Avançado – ENAP</li>
         </ul>
+
       </section>
 
       {/* CONTATO */}
