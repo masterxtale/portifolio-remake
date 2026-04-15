@@ -46,7 +46,7 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     text-align: center;
     height: 300px;           /* 3x maior */
-    width: 300px;            /* 3x maior */
+    width: 80%;            /* 3x maior */
     border-radius: 20px;     /* aumentado para ficar proporcional */
     color: white;
     cursor: pointer;
@@ -67,11 +67,10 @@ const StyledWrapper = styled.div`
 
   /* Efeito de Hover - Mantido o charme original */
   .cards .card:hover {
-    transform: scale(1.15, 1.15);   /* um pouco mais suave que 1.2 */
+    transform: scale(1.10, 1.10);   /* um pouco mais suave que 1.2 */
   }
 
   .cards:hover > .card:not(:hover) {
-    filter: blur(10px);
     transform: scale(0.85, 0.85);
   }
 
