@@ -92,13 +92,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1dvw;
-  width: 10dvw;
+  height: 2.5rem;
+  width: 100%;
   max-width: 9dvw;
   border-radius: 15px;
   color: white;
   font-size: clamp(0rem, 1.3dvw, 1.3rem);
-  padding: 0.7rem 0.4rem;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #7C3AED;
   border-radius: 1dvw;
@@ -125,9 +125,14 @@ body{
 }
 
 .secao{
-  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 15%;
+  padding: 10rem;
 }
+
 
 /* ==================== HERO SECTION ==================== */
 #home{
@@ -382,8 +387,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80dvw;
-  max-width: 80rem;
+  max-width: 70rem;
   border-top: 2px solid #7C3AED;
   background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(15, 15, 30, 0.4));
 }
@@ -639,4 +643,139 @@ footer {
   .button.x {
     max-width: 100%;
   }
+}
+
+              /*CARDS PROJETOS*/
+.card3 {
+ max-width: 30rem;
+ width: 35dvw;
+ min-width: 16.3rem;
+ height: 254px;
+ background: #3405a3;
+ border-radius: 15px;
+ box-shadow: 1px 5px 60px 0px #100a886b;
+}
+
+.card3 .card3-border-top {
+ width: 60%;
+ height: 3%;
+ background: #6b64f3;
+ margin: auto;
+ border-radius: 0px 0px 15px 15px;
+}
+
+.card3 span {
+ font-weight: 600;
+ color: white;
+ text-align: center;
+ display: block;
+ padding-top: 10px;
+ font-size: 16px;
+}
+
+.card3 .job {
+ font-weight: 400;
+ color: white;
+ display: block;
+ text-align: center;
+ padding-top: 3px;
+ font-size: 12px;
+}
+
+.card3 .img {
+ width: 70px;
+ height: 80px;
+ background: #6b64f3;
+ border-radius: 15px;
+ margin: auto;
+ margin-top: 25px;
+}
+
+.card3 button {
+ padding: 8px 25px;
+ display: block;
+ margin: auto;
+ border-radius: 8px;
+ border: none;
+ margin-top: 30px;
+ background: #6b64f3;
+ color: white;
+ font-weight: 600;
+}
+
+.card3 button:hover {
+ background: #534bf3;
+}
+
+/*    CARD 3 projetos */
+.card4 {
+  --font-color: #dcdcdc;
+  --bg-color: #0B0B1A;
+  width: 330px;
+  height: 500px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  box-shadow: 0 15px 35px -10px rgba(124, 58, 237, 0.35),
+              0 8px 20px -5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+  position: relative;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.card4:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #5a5a5a;
+}
+
+.card4__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(69, 0, 133);
+}
+
+.card4__descr-wrapper {
+  padding: 15px;
+  display: grid;
+  height: 60%;
+}
+
+.card4__title {
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.card4__descr {
+  color: var(--font-color);
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+  transform: translateY(25%);
+  fill: var(--font-color);
+}
+
+.card4__links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.card4__links .link {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.card4__links .link:hover {
+  text-decoration: underline;
 }

@@ -10,14 +10,7 @@ const Card = () => {
             <div style={{display:"flex", gap:"2rem", marginTop:"1rem"}}><a style={{fontFamily:"Arial", textDecoration:"none", fontSize:"1rem", backgroundColor:"black", color:"white", padding:"0.1rem", paddingLeft:"2rem", paddingRight:"2rem", borderRadius:"20px", border:"2px solid white"}} href="">Git</a>
                                                                         <a style={{fontFamily:"Arial", textDecoration:"none", fontSize:"1rem", backgroundColor:"rgba(0, 51, 88, 0.48)", color:"white", padding:"0.1rem", paddingLeft:"2rem", paddingRight:"2rem", borderRadius:"20px", border:"2px solid white"}} href="">Site</a></div>
         </div>
-        <div className="card blue">
-          <p className="tip">A FAZER...</p>
-          <p className="second-text"></p>
-        </div>
-        <div className="card green">
-          <p className="tip">A FAZER...</p>
-          <p className="second-text"></p>
-        </div>
+
       </div>
     </StyledWrapper>
   );
