@@ -1,11 +1,11 @@
 import './App.css';
-import Card from "./components/Card";
 
 function App() {
   return (
     <div className="main">
 
       {/* Navbar */}
+      <div style={{padding:"1.4rem", background:"rgba(15, 15, 30, 0.95)"}}>
       <nav id="gridMenu" className="navbar">
         <h2 id="nomeMenu">Henrique | Dev</h2>
 
@@ -21,17 +21,17 @@ function App() {
         <a href="/curriculo/Henrique_Possebon_Barbosa.pdf" target="_blank" className="botaoDownload">
           Baixar CV
         </a>
-      </nav>
+      </nav></div>
 
       {/* HERO SECTION */}
       <section id="home" className="secao">
         <div className="hero-content">
           <h1 className="titulo" id="titulohome">Olá, eu sou <span className="highlight">HENRIQUE POSSEBON</span></h1>
           <h2 className="subtitulohome" id="subtitulohome1">Estudante de Engenharia da Computação • Desenvolvedor Front-End</h2>
-          <p className="paragrafohome" style={{ lineHeight: "1.7", maxWidth: "50ch" }}>
+          <div id="divphome" style={{display:"flex", width:"100%"}}><p className="paragrafohome" style={{ lineHeight: "1.7", maxWidth: "80%" }}>
             Transformo ideias em interfaces modernas, responsivas e funcionais
             utilizando React, JavaScript, HTML e CSS.
-          </p>
+          </p></div>
 
           <div className="cta-buttons">
             <a href="#projetos" className="btn-primary">Ver meus projetos</a>
@@ -62,20 +62,38 @@ function App() {
 
       {/* FORMAÇÃO */}
       <section id="formacao" className="secao">
-        <div>
-          <h2 className="subtitulo" id="tituloFormacao" style={{ fontSize: "4rem" }}>🎓 Formação</h2>
-          <div className="section-content">
-            <div className="card1">
-              <div className="content">
-                <p className="heading">Bacharelado em Engenharia da Computação</p>
-                <p className="para">Anhanguera Educacional – Guarulhos/SP</p>
-                <p className="para">9º semestre • Conclusão prevista: Dezembro de 2026</p>
-                <button className="btn">
-                  <a id="btna" href="https://pt.wikipedia.org/wiki/Engenheiro_de_computa%C3%A7%C3%A3o">Saiba mais</a>
-                </button>
+        <h2 className="subtitulo" id="tituloFormacao" style={{ fontSize: "4rem" }}>🎓 Formação</h2>
+        <div className="skills-grid" id="formacaodv" style={{display:"flex"}}>  
+          <div>
+            
+            <div className="section-content">
+              <div className="card1">
+                <div className="content">
+                  <p className="heading" style={{margin:"0.5em"}}>Bacharelado em Engenharia da Computação</p>
+                  <p className="para">Anhanguera Educacional – Guarulhos/SP</p>
+                  <p className="para">9º semestre • Conclusão prevista: Dezembro de 2026</p>
+                  <button className="btn">
+                    <a id="btna" href="https://pt.wikipedia.org/wiki/Engenheiro_de_computa%C3%A7%C3%A3o">Saiba mais</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          
+          
+          <div className="card1">
+            <div>
+              <div style={{margin:"1.5em", fontSize: "clamp(0rem, 1.5dvw, 1.6rem)"}}><h2>Certificados</h2></div>
+              <ul className="certificados-list" style={{fontSize:"clamp(0rem, 1.3dvw, 0.9em)"}}>
+                <li>Fundamentos da Segurança Cibernética – Coursera / Google</li>
+                <li>Ativos, Ameaças e Vulnerabilidades – Coursera / Google</li>
+                <li>Gerenciar Riscos de Segurança – Coursera / Google</li>
+                <li>Introdução à Ciência da Computação com Python – Coursera / USP</li>
+                <li>Excel Avançado – ENAP</li>
+              </ul>
+            </div>
+          </div>
+        
         </div>
       </section>
 
@@ -280,18 +298,6 @@ function App() {
             </div>
           </>
         </div>
-      </section>
-
-      {/* CERTIFICADOS */}
-      <section id="certificados" className="secao">
-        <h2>Certificados</h2>
-        <ul className="certificados-list">
-          <li>Fundamentos da Segurança Cibernética – Coursera / Google</li>
-          <li>Ativos, Ameaças e Vulnerabilidades – Coursera / Google</li>
-          <li>Gerenciar Riscos de Segurança – Coursera / Google</li>
-          <li>Introdução à Ciência da Computação com Python – Coursera / USP</li>
-          <li>Excel Avançado – ENAP</li>
-        </ul>
       </section>
 
       {/* CONTATO */}

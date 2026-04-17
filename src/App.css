@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: url('/background.png');
   background-size: cover;
@@ -130,7 +134,8 @@ body{
   justify-content: center;
   flex-direction: column;
   margin-top: 15%;
-  padding: 10rem;
+  margin-bottom: 5%;
+  padding: 10%;
 }
 
 
@@ -146,6 +151,7 @@ body{
   width: 80dvw;
   max-width: 80rem;
   gap: 20px;
+  width: auto;
 }
 
 #fotoPerfil{
@@ -191,20 +197,42 @@ body{
     display: flex;
   }
 
+  #formacaodv{
+    flex-wrap: nowrap;
+  }
+
 /* ==================== RESPONSIVIDADE - ADICIONADO ==================== */
 
 @media (max-width: 1200px) {
+  
+  .skills-grid{
+    width: 80dvw;
+  }
+
+  #formacaodv{
+    flex-wrap: wrap;
+  }
+
+  
   #home {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #home p{
+    width: 100%;
+    max-width: 100%;
   }
   #nomeMenu{
     margin: 0;
   }
   
   #fotoPerfil {
-    width: 10rem;
-    height: 10rem;
+    width: 25dvw;
+    height: 25dvw;
+    max-width: 10rem;
+    max-height: 10rem;
   }
   .paragrafo{
     font-size: 2.5dvw;
@@ -212,9 +240,18 @@ body{
   .subtitulo{
     font-size: 5dvw;
   }
+
+  .card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
+
+    #divphome{
+    justify-content: center;
+  }
+
   .main {
     width: 95dvw;
   }
@@ -320,8 +357,10 @@ body{
     padding: 3dvw;
   }
   .paragrafohome{
-  padding: 3dvw;
-  font-size: 2dvw;
+    padding: 3dvw;
+    font-size: 2dvw;
+    width: 100%;
+    text-align: center;
   }
   #home{
     gap:3dvw;
@@ -463,8 +502,8 @@ footer {
   align-items: center;
   height: 10rem;
   min-width: 10dvw;
-  width: 40rem;
-  max-width: 60dvw;
+  width: 50dvw;
+  max-width: 30rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 7rem 2rem 7rem 2rem;
   overflow: hidden;
