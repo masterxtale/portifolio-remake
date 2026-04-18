@@ -5,30 +5,30 @@ function App() {
     <div className="main">
 
       {/* Navbar */}
-      <div style={{padding:"1.4rem", background:"rgba(15, 15, 30, 0.95)"}}>
-      <nav id="gridMenu" className="navbar">
-        <h2 id="nomeMenu">Henrique | Dev</h2>
+      <div style={{ padding: "1.4rem", background: "rgba(15, 15, 30, 0.95)" }}>
+        <nav id="gridMenu" className="navbar">
+          <h2 id="nomeMenu">Henrique | Dev</h2>
 
-        <div className="menu">
-          <a href="#sobre" className="botaoMenu">Sobre Mim</a>
-          <a href="#formacao" className="botaoMenu">Formação</a>
-          <a href="#projetos" className="botaoMenu">Projetos</a>
-          <a href="#habilidades" className="botaoMenu">Habilidades</a>
-          <a href="#certificados" className="botaoMenu">Certificados</a>
-          <a href="#contato" className="botaoMenu">Contato</a>
-        </div>
+          <div className="menu">
+            <a href="#sobre" className="botaoMenu">Sobre Mim</a>
+            <a href="#formacao" className="botaoMenu">Formação</a>
+            <a href="#projetos" className="botaoMenu">Projetos</a>
+            <a href="#habilidades" className="botaoMenu">Habilidades</a>
+            <a href="#certificados" className="botaoMenu">Certificados</a>
+            <a href="#contato" className="botaoMenu">Contato</a>
+          </div>
 
-        <a href="/curriculo/Henrique_Possebon_Barbosa.pdf" target="_blank" className="botaoDownload">
-          Baixar CV
-        </a>
-      </nav></div>
+          <a href="/curriculo/Henrique_Possebon_Barbosa.pdf" target="_blank" className="botaoDownload">
+            Baixar CV
+          </a>
+        </nav></div>
 
       {/* HERO SECTION */}
       <section id="home" className="secao">
         <div className="hero-content">
           <h1 className="titulo" id="titulohome">Olá, eu sou <span className="highlight">HENRIQUE POSSEBON</span></h1>
           <h2 className="subtitulohome" id="subtitulohome1">Estudante de Engenharia da Computação • Desenvolvedor Front-End</h2>
-          <div id="divphome" style={{display:"flex", width:"100%"}}><p className="paragrafohome" style={{ lineHeight: "1.7", maxWidth: "80%" }}>
+          <div id="divphome" style={{ display: "flex", width: "100%" }}><p className="paragrafohome" style={{ lineHeight: "1.7", maxWidth: "80%" }}>
             Transformo ideias em interfaces modernas, responsivas e funcionais
             utilizando React, JavaScript, HTML e CSS.
           </p></div>
@@ -43,7 +43,7 @@ function App() {
 
       {/* SOBRE MIM */}
       <section id="sobre" className="secao">
-        <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <h2 className="subtitulo">Sobre Mim</h2>
           <div className="section-content">
             <p className="paragrafo">
@@ -63,13 +63,13 @@ function App() {
       {/* FORMAÇÃO */}
       <section id="formacao" className="secao">
         <h2 className="subtitulo" id="tituloFormacao" style={{ fontSize: "4rem" }}>🎓 Formação</h2>
-        <div className="skills-grid" id="formacaodv" style={{display:"flex"}}>  
+        <div className="skills-grid" id="formacaodv" style={{ display: "flex" }}>
           <div>
-            
+
             <div className="section-content">
               <div className="card1">
                 <div className="content">
-                  <p className="heading" style={{margin:"0.5em"}}>Bacharelado em Engenharia da Computação</p>
+                  <p className="heading" style={{ margin: "0.5em" }}>Bacharelado em Engenharia da Computação</p>
                   <p className="para">Anhanguera Educacional – Guarulhos/SP</p>
                   <p className="para">9º semestre • Conclusão prevista: Dezembro de 2026</p>
                   <button className="btn">
@@ -79,12 +79,12 @@ function App() {
               </div>
             </div>
           </div>
-          
-          
+
+
           <div className="card1">
             <div>
-              <div style={{margin:"1.5em", fontSize: "clamp(0rem, 1.5dvw, 1.6rem)"}}><h2>Certificados</h2></div>
-              <ul className="certificados-list" style={{fontSize:"clamp(0rem, 1.3dvw, 0.9em)"}}>
+              <div style={{ margin: "1.5em", fontSize: "clamp(0rem, 1.5dvw, 1.6rem)" }}><h2>Certificados</h2></div>
+              <ul className="certificados-list" style={{ fontSize: "clamp(0rem, 1.3dvw, 0.9em)" }}>
                 <li>Fundamentos da Segurança Cibernética – Coursera / Google</li>
                 <li>Ativos, Ameaças e Vulnerabilidades – Coursera / Google</li>
                 <li>Gerenciar Riscos de Segurança – Coursera / Google</li>
@@ -93,7 +93,7 @@ function App() {
               </ul>
             </div>
           </div>
-        
+
         </div>
       </section>
 
@@ -265,7 +265,7 @@ function App() {
       </section>
 
       {/* HABILIDADES */}
-      <section id="habilidades" className="secao" style={{ background: "linear-gradient(to bottom, #72727275, #ec489a00)", padding: "2rem", borderRadius: "20px" }}>
+      <section id="habilidades" className="secao" style={{ background: "linear-gradient(to bottom, rgba(69, 0, 133, 0.59), #ec489a00)", padding: "2rem", borderRadius: "20px" }}>
         <h2 style={{ fontSize: "3rem" }}>Habilidades Técnicas</h2>
 
         <div className="skills-grid">
@@ -301,27 +301,173 @@ function App() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="secao">
-        <h2>Vamos conversar?</h2>
-        <p>Estou aberto a oportunidades de estágio em front-end.</p>
 
-        <div className="contact-info">
-          <p><strong>Email:</strong> idreew2015@gmail.com</p>
-          <p><strong>Telefone:</strong> (11) 94678-2169</p>
-          <p>
-            <strong>LinkedIn:</strong>{' '}
-            <a href="https://linkedin.com/in/henrique-possebon-09a4282b9" target="_blank">
-              linkedin.com/in/henrique-possebon
-            </a>
-          </p>
-          <p>
-            <strong>GitHub:</strong>{' '}
-            <a href="https://github.com/masterxtale" target="_blank">
-              github.com/masterxtale
-            </a>
-          </p>
+      <section id="contato" className="secao">
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem", color: "#C4B5FD" }}>CONTATO</h2>
+
+        <div className="skills-grid" style={{
+          gap: "1rem",
+          background: "rgba(26, 26, 46, 0.9)",
+          borderRadius: "20px",
+          border: "1px solid rgba(124, 58, 237, 0.3)",
+          width: "80%",
+          maxWidth:"70rem"
+        }}>
+
+          {/* Formulário */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.4rem", padding:"2rem" }}>
+            <form action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "1.2rem" }}>
+                <label style={{ color: "#C4B5FD", fontWeight: "600", textTransform: "uppercase", fontSize: "0.95rem" }}>
+                  EMAIL
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="seuemail@gmail.com"
+                  style={{
+                    background: "#0F0F1A",
+                    border: "1px solid #4C1D95",
+                    borderRadius: "12px",
+                    padding: "0.95rem 1.2rem",
+                    color: "white",
+                    fontSize: "1.02rem"
+                  }}
+                  required
+                />
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "1.2rem" }}>
+                <label style={{ color: "#C4B5FD", fontWeight: "600", textTransform: "uppercase", fontSize: "0.95rem" }}>
+                  NOME
+                </label>
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Seu nome"
+                  style={{
+                    background: "#0F0F1A",
+                    border: "1px solid #4C1D95",
+                    borderRadius: "12px",
+                    padding: "0.95rem 1.2rem",
+                    color: "white",
+                    fontSize: "1.02rem"
+                  }}
+                  required
+                />
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "1.2rem" }}>
+                <label style={{ color: "#C4B5FD", fontWeight: "600", textTransform: "uppercase", fontSize: "0.95rem" }}>
+                  ASSUNTO
+                </label>
+                <input
+                  type="text"
+                  name="assunto"
+                  placeholder="Assunto da mensagem"
+                  style={{
+                    background: "#0F0F1A",
+                    border: "1px solid #4C1D95",
+                    borderRadius: "12px",
+                    padding: "0.95rem 1.2rem",
+                    color: "white",
+                    fontSize: "1.02rem"
+                  }}
+                  required
+                />
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "1.2rem" }}>
+                <label style={{ color: "#C4B5FD", fontWeight: "600", textTransform: "uppercase", fontSize: "0.95rem" }}>
+                  TEXTO
+                </label>
+                <textarea
+                  name="mensagem"
+                  placeholder="Escreva sua mensagem aqui..."
+                  rows={5}
+                  style={{
+                    background: "#0F0F1A",
+                    border: "1px solid #4C1D95",
+                    borderRadius: "12px",
+                    padding: "0.95rem 1.2rem",
+                    color: "white",
+                    fontSize: "1.02rem",
+                    resize: "vertical"
+                  }}
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                style={{
+                  background: "#7C3AED",
+                  color: "white",
+                  border: "none",
+                  padding: "1.1rem 2.2rem",
+                  borderRadius: "12px",
+                  fontWeight: "bold",
+                  fontSize: "1.08rem",
+                  cursor: "pointer",
+                  marginTop: "0.8rem",
+                  transition: "all 0.3s ease"
+                }}
+              >
+                ENVIAR
+              </button>
+            </form>
+          </div>
+
+          {/* Links */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "2rem", padding:"1rem", marginTop:"7%" }}>
+            <div style={{ display: "flex", alignItems: "center", gap:"10px" }}>
+              <div style={{ backgroundImage: "url('https://i.pinimg.com/736x/19/40/ab/1940abcfbcbdbdb11b1b8fdbf2f01973.jpg')", height: "4rem", width: "4rem", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", borderRadius:"10px" }}></div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                <span style={{ color: "#C4B5FD", fontSize: "0.92rem", fontWeight: "600", textTransform: "uppercase" }}>
+                  LINKEDIN
+                </span>
+                <a href="https://linkedin.com/in/henrique-possebon-09a4282b9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#E0E7FF", textDecoration: "none", fontSize: "1.05rem" }}>
+                  linkedin.com/in/henrique-possebon
+                </a>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", alignItems: "center", gap:"10px" }}>
+              <div style={{ backgroundImage: "url('giticon.png')", height: "4rem", width: "4rem", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", borderRadius:"10px" }}></div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                <span style={{ color: "#C4B5FD", fontSize: "0.92rem", fontWeight: "600", textTransform: "uppercase" }}>
+                  GITHUB
+                </span>
+                <a href="https://github.com/masterxtale"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#E0E7FF", textDecoration: "none", fontSize: "1.05rem" }}>
+                  github.com/masterxtale
+                </a>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap:"10px" }}>
+              <div style={{ backgroundImage: "url('https://i.pinimg.com/736x/ff/b6/e5/ffb6e5603bb4288d8f5028ea2b8e66d4.jpg')", height: "4rem", width: "4rem", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", borderRadius:"10px" }}></div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                <span style={{ color: "#C4B5FD", fontSize: "0.92rem", fontWeight: "600", textTransform: "uppercase" }}>
+                  GMAIL
+                </span>
+                <a href="mailto:idreew2015@gmail.com"
+                  style={{ color: "#E0E7FF", textDecoration: "none", fontSize: "1.05rem" }}>
+                  idreew2015@gmail.com
+                </a>
+              </div></div>
+          </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer>
